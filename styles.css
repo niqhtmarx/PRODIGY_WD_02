@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 15px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    background: radial-gradient(circle, #74ebd5, #ACB6E5);
+}
+
+#display {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    width: 80px;
+}
+
+.start {
+    background: #28a745;
+}
+
+.reset {
+    background: #dc3545;
+}
+
+.lap {
+    background: #007bff;
+}
+
+.button:hover {
+    background: #444;
+}
+
+#laps {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#laps div {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#laps div:hover {
+    background-color: #e9ecef;
+}
